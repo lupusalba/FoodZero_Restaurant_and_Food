@@ -19,6 +19,7 @@
 }
 
 body {
+    margin: 0;
     font-size: 24px;
     font-family: 'Lato', sans-serif;
 }
@@ -115,4 +116,31 @@ h6 {
 
 .widgetsComments {
     font-size: 0.5833333333333334em;
+}
+
+/**************************************
+**********************************
+////////////////////////////////
+
+        body styles
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+**********************************
+**************************************/
+
+#grid {
+    min-height: 100%;
+    height: 100vh;
+    max-width: 100vw;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 0.73fr;
+
+    margin: 0 138px;
+
+
+    background: red;
+    border: 2px solid blue;
 }
