@@ -228,6 +228,7 @@ h6 {
 
 /***********************************************/
 #ourMenu {
+    background: #FFFFFF;
     position: relative;
     display: grid;
     padding-top: 50px;
@@ -265,4 +266,77 @@ h6 {
 
 .textContainerLeftMargin {
     margin-left: 138px;
+}
+
+
+/*******************************************/
+#cook {
+    background: #FFFFFF;
+    position: relative;
+}
+
+#cook .grid {
+    padding-bottom: 0;
+    color: #000000;
+}
+
+#cookImageWrapper {
+    grid-area: 1 / 1 / span 1 / span 7;
+    z-index: 11111111111;
+}
+
+#cookImageWrapper img {
+    width: 100%;
+    height: auto;
+}
+
+#cookInfo {
+    grid-area: 1 / 8 / span 1 / span 5;
+    z-index: 11111111111;
+}
+
+.leafHome {
+    height: auto;
+    position: absolute;
+    z-index: 0;
+}
+
+#leafTop{
+    width: 15vw;
+    top: 0;
+    left: 138px;
+    transform: rotate(120deg);
+}
+
+#leafBottom{
+    width: 25vw;
+    bottom: 0;
+    right: 138px;
+}
+
+
+
+/*******************************************/
+
+#features {
+    background: #fff;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+#features .grid {
+    color:#000;
+    min-height: 500px;
+}
+
+.featuresItem {
+    grid-column: span 4;
+    text-align: center;
+}
+
+.featuresIcon {
+    padding: 50px;
+    background: rgb(92 35 92 / 15%);
+    border-radius: 100%;
+    filter: invert(1);
 }
