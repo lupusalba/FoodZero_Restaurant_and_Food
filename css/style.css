@@ -340,3 +340,20 @@ h6 {
     border-radius: 100%;
     filter: invert(1);
 }
+
+
+
+/*******************************************/
+#homeBlog {
+
+}
+
+#homeBlog .grid {
+    background: #fff;
+    color: #000;
+}
+
+.homeBlogPost {
+    grid-row: span 1;
+    grid-column: span 6;
+}
