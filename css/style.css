@@ -435,15 +435,59 @@ a.readMore {
 
 /*******************************************/
 #homeReservation {
-    background: #fff;
+    background: var(--myLeryLightGreen);
+    min-height: 650px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.homeReservationGrid h1 {
+    margin-bottom: 0;
+}
+
+.homeReservationGrid p {
+    margin-bottom: 100px;
 }
 
 
+#homeReservationForm {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-left: 138px;
+    margin-right: 138px;
+}
 
+#homeReservationForm #homeReservationFormSubmit {
+    grid-column-start: 2;
+}
 
+#homeReservationForm input {
+    padding: 10px 15px;
+}
 
+#homeReservationFormSubmit {
+    width: 200px;
+    justify-self: center;
+    border: 2px solid var(--myDarkGreen);
+    background: var(--myDarkGreen);
+    color: #fff;
+    padding: 10px 105px;
 
+}
 
+#homeReservationFormSubmit:hover {
+    background: transparent;
+    color: var(--myDarkGreen);
+    transition: all 400ms;
+}
+
+#homeReservationFormSubmit:active {
+    width: 80%;
+}
 
 
 
@@ -451,3 +495,4 @@ a.readMore {
 #homeBlogCategories {
     background: #fff;
 }
+
