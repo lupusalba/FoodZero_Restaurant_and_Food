@@ -341,11 +341,11 @@ h6 {
     filter: invert(1);
 }
 
-
-
 /*******************************************/
 #homeBlog {
-
+    background: #fff;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #homeBlog .grid {
@@ -356,4 +356,98 @@ h6 {
 .homeBlogPost {
     grid-row: span 1;
     grid-column: span 6;
+    position: relative;
+}
+
+a.homeBlogCategoryLink {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--myDarkGreen);
+    padding: 10px 15px;
+    border: 2px solid var(--myDarkGreen);
+    font-size: 1.3em;
+}
+
+a.homeBlogCategoryLink:hover {
+    background: transparent;
+    color: var(--myDarkGreen);
+    transition: all 400ms;
+}
+
+a.homeBlogCategoryLink:active {
+    padding: 7px 14px;
+    transition: all 400ms;
+}
+
+.homeBlogPostInfo {
+    height: 84px;
+    line-height:84px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+
+.homeBlogPostInfo img,
+.homeBlogPostInfo ul,
+.homeBlogPostInfo ul li {
+    display: inline;
+}
+
+.homeBlogPostInfo ul li {
+    text-align: center;
+    width: 100%;
+}
+
+.homeBlogPostTextContainer {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img.linkReadMoreImageArrow {
+    height: 1em;
+    width: auto;
+    display: inline;
+    margin-left: 20px;
+}
+
+a.readMore {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    margin-left: 50px;
+    padding-top: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--myDarkGreen)
+}
+
+
+
+
+
+
+
+/*******************************************/
+#homeReservation {
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/*******************************************/
+#homeBlogCategories {
+    background: #fff;
 }
