@@ -40,6 +40,7 @@ h6,
 .widgetsTitle,
 .widgetsText {
     font-family: 'Rufina', serif;
+    margin: 0;
 }
 
 .largeTitle {
@@ -223,7 +224,7 @@ h6 {
 }
 
 #dietPlanMore {
-    grid-area: 1 / 9 / span 1 / span 3;
+    grid-area: 1 / 8 / span 1 / span 3;
 }
 
 /***********************************************/
@@ -354,9 +355,13 @@ h6 {
 }
 
 .homeBlogPost {
-    grid-row: span 1;
+    grid-row: 1;
     grid-column: span 6;
     position: relative;
+}
+
+.homeBlogPostImage {
+    width: 100%;
 }
 
 a.homeBlogCategoryLink {
@@ -494,5 +499,55 @@ a.readMore {
 /*******************************************/
 #homeBlogCategories {
     background: #fff;
+    padding-top:75px;
+    padding-bottom:75px;
 }
 
+.homeBlogCategoriesTextIntro {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.homeBlogCategoryItemImage {
+    width: 100%;
+}
+
+.homeBlogCategoriesGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-left: 138px;
+    margin-right: 138px;
+}
+
+.homeBlogCategoryItem {
+    position: relative;
+}
+
+.linkAndArrow {
+    color: var(--myDarkGreen);
+}
+
+.linkAndArrow:hover .linkBlogCategory{
+    width: 100px;
+    transition: all 400ms;
+}
+
+.linkAndArrow h4 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline;
+    width: 100%;
+    
+}
+
+.linkBlogCategory {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 50px;
+    line-height: 20px;
+}
