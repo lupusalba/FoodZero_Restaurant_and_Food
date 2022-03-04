@@ -3,28 +3,28 @@
 ***********************************/
 
 :root {
-    --myDarkGreen: #233000;
-    --myMediumGreen: #5E6600;
-    --myLightGreen: #9CAA00;
-    --myLeryLightGreen: #EBF0E4;
+  --myDarkGreen: #233000;
+  --myMediumGreen: #5e6600;
+  --myLightGreen: #9caa00;
+  --myLeryLightGreen: #ebf0e4;
 
-    --myBlack: #000000;
-    --myMediumBlack: #4D4D4D;
-    --myGrey: #B0B0B0;
-    --myWhite: #FFFFFF;
+  --myBlack: #000000;
+  --myMediumBlack: #4d4d4d;
+  --myGrey: #b0b0b0;
+  --myWhite: #ffffff;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-size: 16px /*24px*/;
-    font-family: 'Lato', sans-serif;
+  margin: 0;
+  font-size: 16px /*24px*/;
+  font-family: "Lato", sans-serif;
 
-    min-height: 2400px;
-    background-color: #B0B0B0;
+  min-height: 2400px;
+  background-color: var(--myDarkGreen);
 }
 
 /************************************
@@ -39,87 +39,87 @@ h5,
 h6,
 .widgetsTitle,
 .widgetsText {
-    font-family: 'Rufina', serif;
-    margin: 0;
+  font-family: "Rufina", serif;
+  margin: 0;
 }
 
 .largeTitle {
-    font-size: 6.166666666666667em;
+  font-size: 6.166666666666667em;
 }
 
 h1 {
-    font-size: 4.5em;
+  font-size: 4.5em;
 }
 
 h2 {
-    font-size: 3.6666666666666665em;
+  font-size: 3.6666666666666665em;
 }
 
 h3 {
-    font-size: 2.8333333em;
+  font-size: 2.8333333em;
 }
 
 h4 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 h5 {
-    font-size: 1.333333em;
+  font-size: 1.333333em;
 }
 
 h6 {
-    font-size: 1.083333333em;
+  font-size: 1.083333333em;
 }
 
 .widgetsTitle {
-    font-size: 0.833333em;
+  font-size: 0.833333em;
 }
 
 .widgetsText {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 /************************************
         NAV FONTS
 ***********************************/
 .navItem,
-.navSubItem, 
+.navSubItem,
 .bodyTextBold,
 .bodyCap,
 .excerpt,
 .label,
 .widgetsComments {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .navItem {
-    font-weight: bold;
-    font-size: 2.75;
+  font-weight: bold;
+  font-size: 2.75;
 }
 
 .navSubItem {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .bodyTextBold {
-    font-weight: bold;
-    font-size: 1em;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .bodyCap {
-    font-size: 0.83333333em;
+  font-size: 0.83333333em;
 }
 
 .excerpt {
-    font-size: 0.9166666666666666em;
+  font-size: 0.9166666666666666em;
 }
 
 .label {
-    font-size: 0.75;
+  font-size: 0.75;
 }
 
 .widgetsComments {
-    font-size: 0.5833333333333334em;
+  font-size: 0.5833333333333334em;
 }
 
 /**************************************
@@ -133,25 +133,25 @@ h6 {
 **************************************/
 
 .grid {
-    min-height: 1000px;
-    height:100%;
-    max-width: calc(100vw - 17px);
+  min-height: 1000px;
+  height: 100%;
+  max-width: calc(100vw - 17px);
 
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 50px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 50px;
 
-    margin: 0 138px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  margin: 0 138px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
-    border: 2px solid blue;
-    color: white;
+  border: 2px solid blue;
+  color: white;
 }
 
 .bottomMarginZero {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /**************************************
@@ -165,389 +165,488 @@ h6 {
 **************************************/
 
 #intro {
-    background-color: var(--myDarkGreen);
-    grid-column: span 12;
-    position: relative;
+  background-color: var(--myDarkGreen);
+  grid-column: span 12;
+  position: relative;
 }
 #homeTitleContainer {
-    grid-area: 1 / 1 / span 1 / span 8;
-    z-index: 111111111111111111111;
-    margin-top: 150px;
+  grid-area: 1 / 1 / span 1 / span 8;
+  z-index: 111111111111111111111;
+  margin-top: 150px;
 }
 
 .rotate90 {
-    transform: rotate(90deg);
-    position: absolute;
-    font-size: 2em;
-    padding: 0;
-    left: 10px;
-    top: 800px;
+  transform: rotate(90deg);
+  position: absolute;
+  font-size: 2em;
+  padding: 0;
+  left: 10px;
+  top: 800px;
 }
 
 #homeIntroImage {
-    height: 400px;
-    width: auto;
-    grid-area: 1 / 7 / span 1 / span 5;
-    margin-top: 100px;
+  height: 400px;
+  width: auto;
+  grid-area: 1 / 7 / span 1 / span 5;
+  margin-top: 100px;
 }
 
 #homeIntroImage img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #spices {
-    position: absolute;
-    bottom: 100px;
-    left: 40%;
+  position: absolute;
+  bottom: 100px;
+  left: 40%;
 }
 
-#spices img{
-    height: 150px;
-    width: auto;
-    display: inline;
-    margin-right: 20px;
+#spices img {
+  height: 150px;
+  width: auto;
+  display: inline;
+  margin-right: 20px;
 }
-
 
 /***********************************/
 #dietIntro {
-    background-color: var(--myDarkGreen);
+  background-color: var(--myDarkGreen);
 }
 
 #dietPlan {
-    grid-area: 1 / 1 / span 1 / span 6;
+  grid-area: 1 / 1 / span 1 / span 6;
 }
 
 #dietPlanDescription {
-    grid-column: span 4;
+  grid-column: span 4;
 }
 
 #dietPlanMore {
-    grid-area: 1 / 8 / span 1 / span 3;
+  grid-area: 1 / 8 / span 1 / span 3;
 }
 
 /***********************************************/
 #ourMenu {
-    background: #FFFFFF;
-    position: relative;
-    display: grid;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  background: #ffffff;
+  position: relative;
+  display: grid;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-
 .MenuGrid {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    margin: 0 138px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin: 0 138px;
 }
 
 .menuSpecialItem {
-    
 }
 
 .price {
-    width: 100%;
-    border-bottom: 3px dotted #000;
-    direction: rtl;
+  width: 100%;
+  border-bottom: 3px dotted #000;
+  direction: rtl;
 }
 
-
 #menuBranchImage {
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 600px;
-    width: auto;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 600px;
+  width: auto;
 }
 
 .textContainerLeftMargin {
-    margin-left: 138px;
+  margin-left: 138px;
 }
-
 
 /*******************************************/
 #cook {
-    background: #FFFFFF;
-    position: relative;
+  background: #ffffff;
+  position: relative;
 }
 
 #cook .grid {
-    padding-bottom: 0;
-    color: #000000;
+  padding-bottom: 0;
+  color: #000000;
 }
 
 #cookImageWrapper {
-    grid-area: 1 / 1 / span 1 / span 7;
-    z-index: 11111111111;
+  grid-area: 1 / 1 / span 1 / span 7;
+  z-index: 11111111111;
 }
 
 #cookImageWrapper img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #cookInfo {
-    grid-area: 1 / 8 / span 1 / span 5;
-    z-index: 11111111111;
+  grid-area: 1 / 8 / span 1 / span 5;
+  z-index: 11111111111;
 }
 
 .leafHome {
-    height: auto;
-    position: absolute;
-    z-index: 0;
+  height: auto;
+  position: absolute;
+  z-index: 0;
 }
 
-#leafTop{
-    width: 15vw;
-    top: 0;
-    left: 138px;
-    transform: rotate(120deg);
+#leafTop {
+  width: 15vw;
+  top: 0;
+  left: 138px;
+  transform: rotate(120deg);
 }
 
-#leafBottom{
-    width: 25vw;
-    bottom: 0;
-    right: 138px;
+#leafBottom {
+  width: 25vw;
+  bottom: 0;
+  right: 138px;
 }
-
-
 
 /*******************************************/
 
 #features {
-    background: #fff;
-    padding-top: 200px;
-    padding-bottom: 200px;
+  background: #fff;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 #features .grid {
-    color:#000;
-    min-height: 500px;
+  color: #000;
+  min-height: 500px;
 }
 
 .featuresItem {
-    grid-column: span 4;
-    text-align: center;
+  grid-column: span 4;
+  text-align: center;
 }
 
 .featuresIcon {
-    padding: 50px;
-    background: rgb(92 35 92 / 15%);
-    border-radius: 100%;
-    filter: invert(1);
+  padding: 50px;
+  background: rgb(92 35 92 / 15%);
+  border-radius: 100%;
+  filter: invert(1);
 }
 
 /*******************************************/
 #homeBlog {
-    background: #fff;
-    padding-top: 70px;
-    padding-bottom: 70px;
+  background: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 #homeBlog .grid {
-    background: #fff;
-    color: #000;
+  background: #fff;
+  color: #000;
 }
 
 .homeBlogPost {
-    grid-row: 1;
-    grid-column: span 6;
-    position: relative;
+  grid-row: 1;
+  grid-column: span 6;
+  position: relative;
 }
 
 .homeBlogPostImage {
-    width: 100%;
+  width: 100%;
 }
 
 a.homeBlogCategoryLink {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    text-decoration: none;
-    color: #fff;
-    background-color: var(--myDarkGreen);
-    padding: 10px 15px;
-    border: 2px solid var(--myDarkGreen);
-    font-size: 1.3em;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--myDarkGreen);
+  padding: 10px 15px;
+  border: 2px solid var(--myDarkGreen);
+  font-size: 1.3em;
 }
 
 a.homeBlogCategoryLink:hover {
-    background: transparent;
-    color: var(--myDarkGreen);
-    transition: all 400ms;
+  background: transparent;
+  color: var(--myDarkGreen);
+  transition: all 400ms;
 }
 
 a.homeBlogCategoryLink:active {
-    padding: 7px 14px;
-    transition: all 400ms;
+  padding: 7px 14px;
+  transition: all 400ms;
 }
 
 .homeBlogPostInfo {
-    height: 84px;
-    line-height:84px;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
+  height: 84px;
+  line-height: 84px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
 }
-
 
 .homeBlogPostInfo img,
 .homeBlogPostInfo ul,
 .homeBlogPostInfo ul li {
-    display: inline;
+  display: inline;
 }
 
 .homeBlogPostInfo ul li {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .homeBlogPostTextContainer {
-    margin-left: 50px;
-    margin-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 img.linkReadMoreImageArrow {
-    height: 1em;
-    width: auto;
-    display: inline;
-    margin-left: 20px;
+  height: 1em;
+  width: auto;
+  display: inline;
+  margin-left: 20px;
 }
 
 a.readMore {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    margin-left: 50px;
-    padding-top: 20px;
-    font-size: 1.2em;
-    text-decoration: none;
-    color: var(--myDarkGreen)
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin-left: 50px;
+  padding-top: 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: var(--myDarkGreen);
 }
-
-
-
-
-
-
 
 /*******************************************/
 #homeReservation {
-    background: var(--myLeryLightGreen);
-    min-height: 650px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
+  background: var(--myLeryLightGreen);
+  min-height: 650px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
 .homeReservationGrid h1 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .homeReservationGrid p {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
-
 #homeReservationForm {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 50px;
-    margin-left: 138px;
-    margin-right: 138px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-left: 138px;
+  margin-right: 138px;
 }
 
 #homeReservationForm #homeReservationFormSubmit {
-    grid-column-start: 2;
+  grid-column-start: 2;
 }
 
 #homeReservationForm input {
-    padding: 10px 15px;
+  padding: 10px 15px;
 }
 
 #homeReservationFormSubmit {
-    width: 200px;
-    justify-self: center;
-    border: 2px solid var(--myDarkGreen);
-    background: var(--myDarkGreen);
-    color: #fff;
-    padding: 10px 105px;
-
+  width: 200px;
+  justify-self: center;
+  border: 2px solid var(--myDarkGreen);
+  background: var(--myDarkGreen);
+  color: #fff;
+  padding: 10px 105px;
 }
 
 #homeReservationFormSubmit:hover {
-    background: transparent;
-    color: var(--myDarkGreen);
-    transition: all 400ms;
+  background: transparent;
+  color: var(--myDarkGreen);
+  transition: all 400ms;
 }
 
 #homeReservationFormSubmit:active {
-    width: 80%;
+  width: 80%;
+}
+
+/*******************************************/
+#homeBlogCategories {
+  background: #fff;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.homeBlogCategoriesTextIntro {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.homeBlogCategoryItemImage {
+  width: 100%;
+}
+
+.homeBlogCategoriesGrid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-left: 138px;
+  margin-right: 138px;
+}
+
+.homeBlogCategoryItem {
+  position: relative;
+}
+
+.linkAndArrow {
+  color: var(--myDarkGreen);
+}
+
+.linkAndArrow:hover .linkBlogCategory {
+  width: 100px;
+  transition: all 400ms;
+}
+
+.linkAndArrow h4 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline;
+  width: 100%;
+}
+
+.linkBlogCategory {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 20px;
+  width: 50px;
+  line-height: 20px;
+}
+
+/*******************************************/
+#footer {
+    border-bottom: 2px dashed #fff;
+    background-color: var(--myDarkGreen);
+    color: #fff;
+    font-size: 24px;
+}
+
+#footer .grid {
+    min-height: 500px;
+    align-items: center;
+}
+
+#footer .grid h5 {
+    margin-bottom: 30px;
+}
+
+#footerLogo {
+    grid-area: 1 / 1 / span 1 / span 2;
+    font-size: 2em;
+    font-weight: bold;
+
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+#footerContactInfo {
+    grid-area: 1 / 4 / span 1 / span 4;
+}
+
+#footerContactInfo ul {
+    list-style: none;
+}
+
+#footerContactInfo ul li {
+    line-height: 1.7em;
+}
+
+#footerSubsribe {
+    grid-area: 1 / 7 /  span 1 / span 5;
+}
+
+#footerFormEmail {
+    height: 3em;
+    font-size: 1em;
+    width: 70%;
+    margin-right: 2%;
+    border: 2px solid #fff;
+    display: inline;
+    background-color: transparent;
+    color: white;
+}
+
+#footerFormSubmint {
+    height: 3em;
+    font-size: 1em;
+    width: 27%;
+    border: 2px solid var(--myMediumGreen);
+    display: inline;
+    background-color: var(--myMediumGreen);
+    color: #fff;
+    
+}
+
+#footerFormSubmint:hover {
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all 400ms;
+}
+
+#footerFormSubmint:active {
+    margin-top: 10px;
+    transition: all 400ms;;
+}
+
+.smallLetters {
+    font-size: 0.5em;
 }
 
 
 
 /*******************************************/
-#homeBlogCategories {
-    background: #fff;
-    padding-top:75px;
-    padding-bottom:75px;
-}
-
-.homeBlogCategoriesTextIntro {
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-.homeBlogCategoryItemImage {
+#footerCopyrights {
+    background-color: var(--myDarkGreen);
+    color: #fff;
     width: 100%;
+    height: 100%;
 }
 
-.homeBlogCategoriesGrid {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    margin-left: 138px;
-    margin-right: 138px;
+#footerCopyrightsText {
+    margin: 0 138px;
 }
 
-.homeBlogCategoryItem {
-    position: relative;
+#footerCopyrightsOwner,
+#footerSocialMediaLinks {
+    display: inline-block;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
-.linkAndArrow {
-    color: var(--myDarkGreen);
+#footerCopyrightsOwner {
+    float: left;
+    font-size: 24px;
+    line-height:20px;
 }
 
-.linkAndArrow:hover .linkBlogCategory{
-    width: 100px;
-    transition: all 400ms;
+#footerSocialMediaLinks {
+    float: right;
+    text-align: right;
 }
 
-.linkAndArrow h4 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: inline;
-    width: 100%;
-    
-}
-
-.linkBlogCategory {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 20px;
-    width: 50px;
-    line-height: 20px;
+#footerSocialMediaLinks a img {
+    height: 28px;
+    margin-left: 15px;
 }
