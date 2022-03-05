@@ -154,6 +154,10 @@ h6 {
   margin-bottom: 0;
 }
 
+#MenuMenuWrapper {
+  background-color: #fff;
+}
+
 /**************************************
 **********************************
 ////////////////////////////////
@@ -649,4 +653,90 @@ a.readMore {
 #footerSocialMediaLinks a img {
     height: 28px;
     margin-left: 15px;
+}
+
+
+
+/***************************************
+
+****************************************
+
+      MENU PAGE
+
+****************************************
+
+***************************************/
+
+
+
+
+
+/***************************************/
+
+.MenuMenuTitleWrapper {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.menuImage {
+  grid-column: span 6;
+}
+
+.menuImage img {
+  width: 100%;
+}
+
+.MenuItems {
+  grid-column: span 6;
+}
+
+.price {
+  width: 100%;
+  border-bottom: 3px dotted #000;
+  direction: rtl;
+}
+
+#MenuStarters,
+#MenuMains,
+#MenuPasteriesAndDrinks, {
+  position: relative;
+  z-index: 11111111111111;
+}
+
+#MenuStarters .grid,
+#MenuMains .grid,
+#MenuPasteriesAndDrinks .grid{
+  color: #000;
+}
+
+#MenuStarters > .grid > .menuImage,
+#MenuMains > .grid > .MenuItems,
+#MenuPasteriesAndDrinks > .grid > .menuImage,
+ {
+  grid-area: 1 / 1 / span 1 / span 6;
+}
+
+#MenuStarters > .grid > .MenuItems,
+#MenuMains > .grid > .menuImage,
+#MenuPasteriesAndDrinks > .grid > .MenuItems
+{
+  grid-area: 1 / 7 / span 1 / span 6;
+}
+
+#BlueberryVectorMenuPage {
+  height: 300px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#AvocadoVectorMenuPage {
+  width: 240px;
+  height: auto;
+  position: absolute;
+  top: -100px;
+  left: calc(50% - 120px);
+  z-index: 1;
 }
