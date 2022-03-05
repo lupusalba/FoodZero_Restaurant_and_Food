@@ -666,10 +666,28 @@ a.readMore {
 ****************************************
 
 ***************************************/
+#MenuIntro {
+  min-height: 100vh;
+  height: 700px;
+  max-width: calc(100vw - 17px);
+  color: #fff;
+  background-image: url(../imgs/home/menu-page-intro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  align-content: center;
+  justify-content: start;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
 
-
-
-
+#MenuPageIntroText {
+  margin-left: 138px;
+  grid-column: span 6;
+}
 
 /***************************************/
 
@@ -695,11 +713,12 @@ a.readMore {
   width: 100%;
   border-bottom: 3px dotted #000;
   direction: rtl;
+  margin-top: 50px;
 }
 
 #MenuStarters,
 #MenuMains,
-#MenuPasteriesAndDrinks, {
+#MenuPasteriesAndDrinks {
   position: relative;
   z-index: 11111111111111;
 }
@@ -712,8 +731,7 @@ a.readMore {
 
 #MenuStarters > .grid > .menuImage,
 #MenuMains > .grid > .MenuItems,
-#MenuPasteriesAndDrinks > .grid > .menuImage,
- {
+#MenuPasteriesAndDrinks > .grid > .menuImage {
   grid-area: 1 / 1 / span 1 / span 6;
 }
 
@@ -728,7 +746,7 @@ a.readMore {
   height: 300px;
   width: auto;
   position: absolute;
-  top: 0;
+  top: -80px;
   right: 0;
 }
 
