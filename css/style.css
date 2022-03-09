@@ -758,3 +758,66 @@ a.readMore {
   left: calc(50% - 120px);
   z-index: 1;
 }
+
+
+
+/***************************************
+
+****************************************
+
+      CONTACT PAGE
+
+****************************************
+
+***************************************/
+
+#contactIntro {
+  background-image: url(../imgs/home/contact-page-intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#contactIntro  .grid{
+  align-items: center;
+}
+
+#contactInfo {
+  position: relative;
+
+}
+
+#contactOrange {
+  height: auto;
+  width: 200px;
+  position: absolute;
+  left: calc(100vw - 100px);
+}
+
+#contactImageWrapperFirst {
+  grid-area: 1 / 1 / span 1 / span 6;
+}
+
+#contactInfoContactFirst {
+  grid-area: 1 / 8 / span 1 / span 4;
+  position: relative;
+}
+
+#contactInfoContactFirst p {
+  position: absolute;
+  bottom:50px;
+}
+
+#contactInfoContactSecond {
+  grid-area: 2 / 1 / span 1 / span 6;
+  align-self: center;
+}
+
+#contactImageWrapperSecond{
+  grid-area: 2 / 7 / span 1 / span 6;
+}
+
+.contactImageWrapper img {
+  width: 100%;
+}
+
