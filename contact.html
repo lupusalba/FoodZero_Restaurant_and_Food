@@ -30,6 +30,11 @@
         ul {
             padding: 0;
         }
+
+        #contactWrapper {
+            background-color: #fff;
+        }
+
     </style>
 
 
@@ -38,9 +43,10 @@
 
 <body>
     <div id="contactWrapper">
+
         <div id="contactIntro">
             <div class="grid">
-                <div id="MenuPageIntroText">
+                <div id="ContactPageIntroText">
                     <h1 class="largeTitle">Get in Touch</h1>
                     <p>The freshest ingredients for you every day</p>
                 </div><!-- /#MenuPageIntroText-->
@@ -53,15 +59,15 @@
 
         <div id="contactInfo">
 
-            <img src="./imgs/vectors/Orange.svg" alt="ornage">
+            <img id="contactOrange" src="./imgs/vectors/Orange.svg" alt="ornage">
 
             <div class="grid">
 
-                <div class="contactImageWrapper">
+                <div id="contactImageWrapperFirst" class="contactImageWrapper">
                     <img src="./imgs/home/contact-one-table.jpg" alt="table">
                 </div>
 
-                <div class="contactInfoContact">
+                <div id="contactInfoContactFirst" class="contactInfoContact">
                     <p>
                         We can be contacted via<br>
                         email <a href="mailto:info@foodzero.com">info@foodzero.com</a><br>
@@ -70,12 +76,12 @@
                 </div><!-- /#contactInfoContact-->
 
 
-                <div class="contactInfoContact">
+                <div id="contactInfoContactSecond" class="contactInfoContact">
                     <p>We are located in 1959 Sepulveda Blvd. Culver City, CA, 90230</p>
                     <button>View in maps</button>
                 </div><!-- /#contactInfoContact-->
 
-                <div class="contactImageWrapper">
+                <div id="contactImageWrapperSecond" class="contactImageWrapper">
                     <img src="./imgs/home/contact-two-outside-look.jpg" alt="">
                 </div>
 
@@ -92,14 +98,14 @@
 
             <form action="" id="bigForm">
 
-                <input placeholder="First Name" type="text" name="" id="" value="">
-                <input placeholder="Last Name" type="text" name="" id="" value="">
-                <input placeholder="Email" type="email" name="" id="">
-                <input placeholder="Phone" type="text" name="" id="">
-                <input type="date" name="" id="">
-                <input type="time" name="" id="">
-                <input type="number" name="" id="">
-                <input type="submit" value="">
+                <input class="halfWidthInput" placeholder="First Name" type="text" name="" id="" value="">
+                <input class="halfWidthInput" placeholder="Last Name" type="text" name="" id="" value="">
+                <input class="fullWidthInput" placeholder="Email" type="email" name="" id="">
+                <input class="fullWidthInput" placeholder="Phone" type="text" name="" id="">
+                <input class="halfWidthInput" type="date" name="" id="">
+                <input class="halfWidthInput" type="time" name="" id="">
+                <input class="fullWidthInput" type="number" name="" id="">
+                <input class="submitInput"  type="submit" value="Submit">
 
             </form>
 
