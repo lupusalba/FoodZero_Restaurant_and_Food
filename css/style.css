@@ -905,7 +905,7 @@ a.readMore {
   position: relative;
 }
 
-##aboutIntro .grid {
+#aboutIntro .grid {
   color: #fff;
 }
 
@@ -918,8 +918,26 @@ a.readMore {
 }
 
 
+/*****************************************/
+#shortAboutIntroInfo {
+  
+}
 
+#shortAboutIntroInfo .grid{
+  justify-items: center;
+  align-items: center;
+  color: #000;
+  min-height: 500px;
+}
 
+#shortAboutIntroInfoText {
+  grid-area: 1 / 2 / span 1 / span 4;
+
+}
+
+#shortAboutIntroInfoImage {
+  grid-area: 1 / 7 / span 1 / span 6;
+}
 
 
 
