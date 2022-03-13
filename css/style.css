@@ -897,6 +897,27 @@ a.readMore {
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 **********************************
 **************************************/
+#aboutIntro {
+  background-image: url(../imgs/home/about-intro.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+##aboutIntro .grid {
+  color: #fff;
+}
+
+#aboutTextWrapper {
+  align-self: center;
+  grid-column:  span 5;
+  justify-self: end;
+  position: absolute;
+  right: 250px;
+}
+
+
 
 
 
