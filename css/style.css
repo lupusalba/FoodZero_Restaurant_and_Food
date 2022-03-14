@@ -1003,7 +1003,9 @@ a.readMore {
 
 /***********************************/
 #aboutCoockingProcess {
-
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 250px;
 }
 
 #aboutCoockingProcess h1 {
@@ -1026,27 +1028,9 @@ a.readMore {
 
 
 
-#aboutCoockingProcessTwoImageWrapper {
-  
-}
-
 #aboutCoockingProcessTwoImageWrapper img {
   width: 100%;
 }
-
-#aboutCoockingProcessTwoTextWrapper{
-  
-}
-
-#aboutCoockingProcessThreeTextWrapper {
-  
-  
-}
-
-#aboutCoockingProcessThreeImageWrapper {
-  
-}
-
 
 #aboutCoockingProcessTwoWrappAll {
   grid-area: 1 / 8 / span 1 / span 5;
@@ -1055,4 +1039,22 @@ a.readMore {
 #aboutCoockingProcessThreeWrappAll {
   grid-area: 2 / 1 / span 1 / span 5;
   margin-top: -400px;
+}
+
+#rosemeryVectorTop {
+  min-height: 400px;
+  width:auto;
+  position: absolute;
+  top: -150px;
+  right: -100px;
+  transform: rotate(359deg);
+}
+
+#rosemeryVectorBottom {
+  min-height: 200px;
+  width:auto;
+  position: absolute;
+  bottom: -400px;
+  left: -200px;
+  transform: rotate(200deg);
 }
