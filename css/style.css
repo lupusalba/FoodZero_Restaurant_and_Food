@@ -1024,19 +1024,35 @@ a.readMore {
   grid-area: 1 / 7 / span 1 / span 3;
 }
 
+
+
 #aboutCoockingProcessTwoImageWrapper {
-  grid-column: 6 / span 6;
+  
+}
+
+#aboutCoockingProcessTwoImageWrapper img {
+  width: 100%;
 }
 
 #aboutCoockingProcessTwoTextWrapper{
-  grid-column: 1 / span 6;
+  
 }
 
 #aboutCoockingProcessThreeTextWrapper {
-  grid-column: 7 / span 4;
+  
+  
 }
 
 #aboutCoockingProcessThreeImageWrapper {
-  grid-column: 1 / span 6;
+  
 }
 
+
+#aboutCoockingProcessTwoWrappAll {
+  grid-area: 1 / 8 / span 1 / span 5;
+}
+
+#aboutCoockingProcessThreeWrappAll {
+  grid-area: 2 / 1 / span 1 / span 5;
+  margin-top: -400px;
+}
